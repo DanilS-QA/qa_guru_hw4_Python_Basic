@@ -1,5 +1,6 @@
 import math
 import random
+from decimal import Decimal
 
 def test_greeting():
     """
@@ -46,13 +47,13 @@ def test_circle():
     # Расчет площади круга (S = π * r²)
     area = math.pi * r ** 2
 
-    assert round == 1661.9025137490005
+    assert area == 1661.9025137490005
 
     # TODO сосчитайте длину окружности
     # Расчет длины окружности (C = 2 * π * r)
     length = 2 * math.pi * r
 
-    assert round == 144.51326206513048
+    assert length == 144.51326206513048
 
 
 def test_random_list():
